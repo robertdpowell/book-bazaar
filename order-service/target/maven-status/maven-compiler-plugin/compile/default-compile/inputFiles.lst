@@ -1,0 +1,10 @@
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/OrderPlacedEvent.java
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/model/Book.java
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/config/KafkaConsumerConfig.java
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/ClientConfig.java
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/OrderEventConsumer.java
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/config/KafkaProducerConfig.java
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/model/Order.java
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/OrderEventPublisher.java
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/OrderController.java
+/Users/robertpowell/book-bazaar/order-service/src/main/java/com/bookbazaar/order/OrderServiceApplication.java

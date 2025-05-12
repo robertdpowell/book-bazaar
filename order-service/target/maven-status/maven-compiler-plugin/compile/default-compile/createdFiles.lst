@@ -1,0 +1,10 @@
+com/bookbazaar/order/OrderServiceApplication.class
+com/bookbazaar/order/OrderController.class
+com/bookbazaar/order/OrderPlacedEvent.class
+com/bookbazaar/order/model/Order.class
+com/bookbazaar/order/ClientConfig.class
+com/bookbazaar/order/OrderEventConsumer.class
+com/bookbazaar/order/model/Book.class
+com/bookbazaar/order/config/KafkaConsumerConfig.class
+com/bookbazaar/order/config/KafkaProducerConfig.class
+com/bookbazaar/order/OrderEventPublisher.class

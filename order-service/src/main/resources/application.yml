@@ -1,0 +1,44 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: order-service
+  kafka:
+    bootstrap-servers: kafka:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      bootstrap-servers: kafka:9092
+    consumer:
+      group-id: order-service
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      bootstrap-servers: kafka:9092
+      properties:
+        spring.json.trusted.packages: com.bookbazaar.order
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka
+  instance:
+    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    beans:
+      enabled: true
+
+logging:
+  level:
+    org.apache.kafka: INFO
+    org.springframework.kafka: INFO
+    com.bookbazaar.order: DEBUG
